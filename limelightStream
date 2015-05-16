@@ -1,3 +1,2 @@
-cd /opt/user/config/limelight
 java -jar /opt/limelight/limelight.jar stream -720 -30fps $1 -app Steam -mapping /opt/user/config/limelight/mapfile.map
 
