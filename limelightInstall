@@ -1,0 +1,20 @@
+#!/bin/bash
+# Based on automatic installer 
+# By stsfin 
+# https://github.com/stsfin/LimelightPiInstaller
+version="1.2.2"
+description "Install limelight to streams games on TV"
+
+messagebox "Prerequesites"
+listecho "update apt"
+listecho "java"
+listecho "inputs-utils"
+
+installer oracle-java8-jdk
+installer input-utils
+
+mkdir /opt/limelight
+messagebox "Downloading limelight 1.2.2"
+wget https://github.com/irtimmer/moonlight-embedded/releases/download/v$version/limelight.jar -O /opt/limelight/limelight.jar
+wget https://github.com/irtimmer/limelight-embedded/releases/download/v$version/libopus.so -O /opt/limelight/libopus.so
+
