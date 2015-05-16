@@ -1,2 +1,0 @@
-ls /dev/input/event*
-java -jar limelight.jar map -input /dev/input/event$1 mapfile.map

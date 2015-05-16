@@ -1,0 +1,1 @@
+java -jar /opt/limelight/limelight.jar map -input /dev/input/event0 mapfile.map
