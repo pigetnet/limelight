@@ -1,7 +1,0 @@
-#!/bin/bash
-clear
-pairAddress=$(cat /boot/piget/config/limelightPair.txt)
-description "Pairing with $pairAddress"
-mkdir -p /opt/user/config/limelight
-cd /opt/user/config/limelight
-java -jar /opt/limelight/limelight.jar pair $1

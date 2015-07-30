@@ -1,4 +1,4 @@
 #!/bin/bash
-description "Controllers list"
+/show/description "Controllers list"
 cat /proc/bus/input/devices|grep "Name=";cat /proc/bus/input/devices|grep "Handlers"|awk {'print $3'}
 

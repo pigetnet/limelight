@@ -1,0 +1,6 @@
+#!/bin/bash
+/show/listecho "IP address of your computer" $OK
+read -r -p "IP:" ip
+echo $ip > /boot/piget/config/limelightPair.txt
+/show/file /boot/piget/config/limelightPair.txt
+/show/listecho "IP saved [OK]" $OK

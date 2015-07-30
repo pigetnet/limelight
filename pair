@@ -1,0 +1,11 @@
+#!/bin/bash
+clear
+if [ -e /boot/piget/config/limelightPair.txt ];then
+	pairAddress=$(cat /boot/piget/config/limelightPair.txt)
+	/show/description "Pairing with $pairAddress"
+	mkdir -p /opt/user/config/limelight
+	cd /opt/user/config/limelight
+	java -jar /opt/limelight/limelight.jar pair $pairAddress
+else
+	/do/limelight/setup
+fi

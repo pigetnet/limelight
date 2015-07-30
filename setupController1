@@ -1,1 +1,2 @@
+/show/listecho "Setup controller 1" $OK
 java -jar /opt/limelight/limelight.jar map -input /dev/input/event0 /opt/user/config/limelight/mapfile.map
